@@ -1,0 +1,89 @@
+/* reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* common  */
+header, footer{
+    padding: 1.25rem;
+}
+/* header  */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 4rem;
+    padding-right: 1.25rem;
+}
+#play{
+    font-size: 1.125rem;
+    padding: 0 2.25rem;
+}
+.start-button{
+    display: flex;
+    align-items: center;
+}
+.start-button label{
+    font-size: 1.125rem;
+}
+#difficulty{
+    font-size: 1.125rem;
+    background-color: #e9e9ed;
+    padding: 0 2.25rem;
+    border-radius: .3125rem;
+    margin: 0 .3125rem;
+}
+/* main  */
+main{
+    flex-grow: 1;
+    background-color: #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell-hard{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell-medium{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell-onclick{
+    background-color: blue;
+}
+/* footer */
